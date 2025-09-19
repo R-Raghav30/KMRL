@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-gov-50 text-gov-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* Kerala Metro Professional Buttons */
+  .btn-kerala {
+    @apply bg-kerala-gradient hover:shadow-kerala text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-metro {
+    @apply bg-metro-gradient hover:shadow-metro text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-traditional {
+    @apply bg-traditional-gradient hover:shadow-lg text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-outline-kerala {
+    @apply border-2 border-kerala-500 text-kerala-600 hover:bg-kerala-500 hover:text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300;
+  }
+  
+  /* Professional Cards */
+  .card-kerala {
+    @apply bg-white rounded-2xl shadow-gov border border-gov-200 p-8 hover:shadow-lg transition-all duration-300;
+  }
+  
+  .card-metro {
+    @apply bg-white rounded-2xl shadow-metro border border-metro-200 p-8 hover:shadow-lg transition-all duration-300;
+  }
+  
+  .card-traditional {
+    @apply bg-white rounded-2xl shadow-lg border border-traditional-200 p-8 hover:shadow-xl transition-all duration-300;
+  }
+  
+  /* Input Fields */
+  .input-kerala {
+    @apply w-full px-4 py-3 border-2 border-gov-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-kerala-500 focus:border-kerala-500 transition-all duration-300;
+  }
+  
+  /* Kerala Metro Header Styles */
+  .header-kerala {
+    @apply bg-kerala-gradient text-white shadow-lg;
+  }
+  
+  .header-metro {
+    @apply bg-metro-gradient text-white shadow-lg;
+  }
+  
+  /* Professional Navigation */
+  .nav-item {
+    @apply flex items-center px-4 py-3 text-gov-700 hover:bg-kerala-50 hover:text-kerala-700 rounded-xl transition-all duration-300 font-medium;
+  }
+  
+  .nav-item-active {
+    @apply bg-kerala-100 text-kerala-700 border-r-4 border-kerala-500;
+  }
+  
+  /* Kerala Metro Badges */
+  .badge-kerala {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-kerala-100 text-kerala-800;
+  }
+  
+  .badge-metro {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-metro-100 text-metro-800;
+  }
+  
+  .badge-traditional {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-traditional-100 text-traditional-800;
+  }
+  
+  /* Professional Stats Cards */
+  .stat-card {
+    @apply bg-white rounded-2xl p-6 shadow-gov border border-gov-200 hover:shadow-lg transition-all duration-300;
+  }
+  
+  .stat-number {
+    @apply text-3xl font-bold font-display text-gov-900;
+  }
+  
+  .stat-label {
+    @apply text-sm font-medium text-gov-600 uppercase tracking-wide;
+  }
+  
+  /* Kerala Metro Document Cards */
+  .doc-card {
+    @apply bg-white rounded-2xl p-6 shadow-gov border border-gov-200 hover:shadow-lg hover:border-kerala-300 transition-all duration-300 cursor-pointer;
+  }
+  
+  .doc-card:hover {
+    @apply transform -translate-y-1;
+  }
+}
