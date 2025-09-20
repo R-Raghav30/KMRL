@@ -1,3 +1,74 @@
+// --- KnowledgeAttrition Data ---
+export const metroStats = {
+  documents: 980,
+  interviews: 26,
+  nodes: 1570,
+  lastUpdated: "2024-02-10",
+};
+
+export const interviews = [
+  {
+    name: "Anil Nair",
+    role: "Station Manager",
+    date: "2024-02-01",
+    duration: "1h 30m",
+    status: "processed",
+    topics: ["Train Scheduling", "Passenger Flow", "Emergency Plans"],
+  },
+  {
+    name: "Lakshmi P.",
+    role: "Maintenance Lead",
+    date: "2024-01-28",
+    duration: "2h 05m",
+    status: "processing",
+    topics: ["Track Maintenance", "Vendor Management"],
+  },
+];
+
+export const tech = [
+  { name: "OCR", tool: "Google Vision API" },
+  { name: "Vector Search", tool: "Pinecone" },
+  { name: "Knowledge Graph", tool: "Neo4j" },
+  { name: "AI Engine", tool: "Gemini RAG" },
+];
+
+export const caseFiles = [
+  {
+    id: 1,
+    title: "Emergency Evacuation Plan 2024",
+    department: "Safety",
+    uploadedBy: "Rajesh Kumar",
+    date: "2024-02-05",
+    size: "2.4 MB",
+    fileUrl: "#",
+  },
+  {
+    id: 2,
+    title: "Annual Maintenance Report",
+    department: "Engineering",
+    uploadedBy: "Lakshmi P.",
+    date: "2024-01-22",
+    size: "3.1 MB",
+    fileUrl: "#",
+  },
+  {
+    id: 3,
+    title: "Vendor Contract Guidelines",
+    department: "Procurement",
+    uploadedBy: "Anil Nair",
+    date: "2024-01-10",
+    size: "1.8 MB",
+    fileUrl: "#",
+  },
+];
+
+export const sampleQs = [
+  "How are metro station safety checks conducted?",
+  "Describe the vendor contract renewal process.",
+  "List key evacuation steps in emergencies.",
+];
+
+
 export const documents = [
   {
     id: "1",
@@ -213,4 +284,6 @@ export const searchFilters = {
     { id: "name_asc", name: "Name (A-Z)" },
     { id: "name_desc", name: "Name (Z-A)" },
   ],
+
+  
 };
